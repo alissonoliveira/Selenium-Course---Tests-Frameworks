@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test_Suite_Example">
+
+    <test name="Test_Example_01_by_Class" preserve-order="true">
+        <classes>
+            <class name="br.org.venturus.selenium_course.testNg.xml_file.TestNgExampleByClass">
+                <methods>
+                    <exclude name="notBeExecuted"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test_Example_02_by_Group" preserve-order="true">
+        <groups>
+            <run>
+                <include name="all"/>
+                <exclude name="testers"/>
+                <!--<exclude name="developers"/>-->
+            </run>
+        </groups>
+        <packages>
+            <package name="br.org.venturus.selenium_course.testNg.xml_file"/>
+        </packages>
+    </test>
+</suite>
